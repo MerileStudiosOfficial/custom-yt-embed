@@ -355,7 +355,7 @@ function generate() {
 	else if((document.getElementById('customUI').checked === true) && (document.getElementById('watermark').checked === true)){
 		wmhpos += 0;
 		wmvpos += 0;
-		wmintro = '<div style=\"overflow: hidden;width:'+modwidth+'px;height:'+modheight+'px;'+customuistyle+'\"><style type=\"text\/css\">.watermark{border:0;position:relative;bottom:'+wmvpos+'px;left:'+wmhpos+'px;max-width:150px;max-height:75px;opacity:0.25;z-index:5;-o-transition:opacity 0.5s ease-in-out;-moz-transition:opacity 0.5s ease-in-out;-webkit-transition:opacity 0.5s ease-in-out;transition:opacity 0.5s ease-in-out;}.watermark:hover{opacity:1;}<\/style>';
+		wmintro = '<div style=\"overflow: hidden;width:'+modwidth+'px;height:'+modheight+'px;'+customuistyle+'\"><style type=\"text\/css\">.watermark{border:0;position:relative;bottom:'+wmvpos+'px;left:'+wmhpos+'px;max-width:150px;max-height:75px;opacity:1;z-index:5;-o-transition:opacity 0.5s ease-in-out;-moz-transition:opacity 0.5s ease-in-out;-webkit-transition:opacity 0.5s ease-in-out;transition:opacity 0.5s ease-in-out;}.watermark:hover{opacity:1;}<\/style>';
 		finalstring = wmintro+'<iframe '+width+height+'src=\"'+protocol+'www.youtube.com\/embed\/'+ytid+'\" frameborder=\"0\"><\/iframe>'+wmoutro;
 	}
 	/* If customUI is disabled and watermark is enabled */
